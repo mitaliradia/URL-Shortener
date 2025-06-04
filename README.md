@@ -13,4 +13,18 @@ GET /:id - Redirects the user to the original URL
 
 GET /URL/analytics/:id - Returns the clicks for the provided short id
 
+Two ways of authentication:
+1. Stateful
+2. Stateless
+
+Token can be sent via two ways:
+As:
+1. cookie- automatic (used only for browser)
+2. headers - json format token   header "authorization"
+                                      bearer
+        (used for both browser and mobile applications)
+        for browser - stored in localStorage 
+        for mobile app - stored on the user device
+
+
 
